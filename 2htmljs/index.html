@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Acendendo Led</title>
 </head>
 <body>
@@ -14,11 +15,16 @@
 
 <p>Nesse caso JavaScript muda o valor de src (source) atributo de uma imagem.</p>
 
-<button onclick="document.getElementById('myImage').src='led_gre.png'">Led Verde</button>
+<button onclick="mudaGRE()">Led Verde</button>
 
-<img id="myImage" src="led_gre.png" style="width:100px">
+<img id="myImage" src="led_gre.png">
 
-<button onclick="document.getElementById('myImage').src='led_red.png'">Led Vermelho</button>
+<button onclick="mudaRED()">Led Vermelho</button>
+
+<button onclick="mudaIMG('led_red.png')">outro Led Vermelho</button>
+
+
+<script src="script.js"></script>
 
 
 
